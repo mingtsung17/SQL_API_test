@@ -1,0 +1,23 @@
+<body style="background-color: white">
+	<div class = 'problem1'>
+		<h4> i.lineItem/UnblendedCost grouping by product/productname <h4>
+		<p style="color: black">lineitem/usageaccountid: {{ user_id }}</p>
+		
+	</div>
+	<div class = 'p1-ans'>
+		{% for table in tables %}
+            	{{ table|safe }}
+		{% endfor %}
+	</div>
+
+	<div class = 'problem2'>
+		<h4> ii.daily lineItem/UsageAmount grouping by product/productname <h4>
+	</div>
+
+	<div class = 'p1-ans'>
+		{% for table in tables2 %}
+            	{{ table|safe }}
+		{% endfor %}
+	</div>
+
+</body>
